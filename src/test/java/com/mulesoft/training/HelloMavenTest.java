@@ -23,7 +23,7 @@ public class HelloMavenTest extends FunctionalTestCase {
 	 public void retrieveFlightsAddsAppropriateHeader() throws Exception {
 		 System.out.println("Dynamic Port in Test 2 : " + dynamicPort.getNumber() + "\n\n");
 		 MuleEvent event = runFlow("retrieveFlights");
-		 String contentType = event.getMessage().getOutboundProperty("Content-Type");
+		 String contentType = event.getMessage().getOutboundProperty("Content_Type");
 		 assertEquals("application/json", contentType);
 	 }
 
