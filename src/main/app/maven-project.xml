@@ -29,7 +29,7 @@ http://www.mulesoft.org/schema/mule/json http://www.mulesoft.org/schema/mule/jso
 			doc:name="Set Payload" />
 	</flow>
 
-	<flow name="maven-projectFlow">
+	<flow name="retrieveFlights">
 		<http:listener
 			config-ref="HTTP_Listener_Configuration"
 			path="/flights"
